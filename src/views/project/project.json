@@ -1,0 +1,15 @@
+{
+	"data" : [
+		{
+			"title" : "Operations Automation",
+			"subtitle" : "Using Airtable as a CMS and displaying the content in a Vue project",
+			"goals" : [
+				"Reduce manual order entry",
+				"Utilize existing data sources without major changes",
+				"Deliver information in a user-friendly format"
+			],
+			"tools" : ["JavaScript", "Zapier", "Podio"],
+			"how" : "Knotty Tie Co's data was there, but required too much manual entry to be sustainable. Delivery deadlines, for example, were determined by a shipping method and not explicitly given by Shopify. The company used Zapier already to connect Shopify and the order management system (podio). The solution was to extend these systems with custom Javascript, allowing information to flow more fluidly and completely."
+		}
+	]
+}
