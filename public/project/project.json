@@ -1,15 +1,42 @@
 {
 	"data" : [
-		{
-			"title" : "Operations Automation",
-			"subtitle" : "Using Airtable as a CMS and displaying the content in a Vue project",
-			"goals" : [
-				"Reduce manual order entry",
-				"Utilize existing data sources without major changes",
-				"Deliver information in a user-friendly format"
-			],
-			"tools" : ["JavaScript", "Zapier", "Podio"],
-			"how" : "Knotty Tie Co's data was there, but required too much manual entry to be sustainable. Delivery deadlines, for example, were determined by a shipping method and not explicitly given by Shopify. The company used Zapier already to connect Shopify and the order management system (podio). The solution was to extend these systems with custom Javascript, allowing information to flow more fluidly and completely."
-		}
+		[
+			{
+				"title" : "Chat Application",
+				"subtitle" : "Building realtime chat application server and client",
+				"goals" : [
+					"Register new user",
+					"Create new group chat",
+					"Send and receive message through group chat"
+				],
+				"tools" : ["Typescript", "Express", "MongoDB", "Socket.io", "Angular"],
+				"how" : "Create new user and join to group chat. Then just type the message and will receive realtime another messages.",
+				"src" : "/project1-chat-app.png"
+			},
+			{
+				"title" : "Portofolio Web",
+				"subtitle" : "Using Vue and Bulma for CSS Framework",
+				"goals" : [
+					"Build Single Page Application Portofolio",
+					"Deliver portofolio information dynamically",
+					"Prove my work"
+				],
+				"tools" : ["Javascript", "Vue", "Bulma"],
+				"how" : "It shows Single Page Application dynamically.",
+				"src" : "/project2-portofolio.png"
+			},
+			{
+				"title" : "River Monitoring",
+				"subtitle" : "Building river monitoring IoT which is connected to IoT Application Dashboard.",
+				"goals" : [
+					"Monitor quality parameter of river through network",
+					"Measure quality parameter of river such as pH, Turbidity, Conductivity, and Temperature",
+					"Deliver information about river quality"
+				],
+				"tools" : ["Arduino", "GPRS Module", "Thingspeak", "Node.js", "Javascript"],
+				"how" : "Measurement system will gather all information of river through sensor. Then, Arduino will send data to network through GPRS Module. Last, the IoT Dashboard will deliver information about the river quality parameter.",
+				"src" : "/project3-rivermonitoring.png"
+			}
+		]
 	]
 }

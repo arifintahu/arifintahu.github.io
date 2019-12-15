@@ -34,7 +34,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          Built by Miftahul Arifin.
+          Built by Miftahul Arifin with Vue and Bulma.
         </p>
       </div>
     </footer>

@@ -14,9 +14,10 @@ export default new Router({
       component: Portofolio
     },
     {
-      path: "/project/:slug",
+      path: "/project/:index/:view",
       name: "project",
-      component: ProjectDetail
+      component: ProjectDetail,
+      props: true
     }
   ]
 });

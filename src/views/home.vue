@@ -4,7 +4,7 @@
 			<div class="hero-body">
 					<div class="container">
 						<h1 class="title">Hello, I'm Arifin</h1>
-						<h2 class="subtitle is-3">A guy who is passionate learning about software and AI.</h2>
+						<h2 class="subtitle is-3">A person who is passionate learning about software and AI.</h2>
 					</div>
 				</div>
 		</section>

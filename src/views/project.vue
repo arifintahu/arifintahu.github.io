@@ -9,26 +9,9 @@
 		</section>
 		<section>
 			<div class="container is-fluid" style="padding-top: 20px">
-				<div class="columns" style="padding: 0px 10% 20px 10%">
-					<div class="column">
-						<CardProject view=1 title="Operation Automations" src="/project1.png" body="Using Airtable as CMS and displaying the content in a Vue Project"></CardProject>
-					</div>
-					<div class="column">
-						<CardProject view=2 title="Operation Automations" src="/project1.png" body="Using Airtable as CMS and displaying the content in a Vue Project"></CardProject>
-					</div>
-					<div class="column">
-						<CardProject view=3 title="Operation Automations" src="/project1.png" body="Using Airtable as CMS and displaying the content in a Vue Project"></CardProject>
-					</div>
-				</div>
-				<div class="columns" style="padding: 0px 10% 20px 10%">
-					<div class="column">
-						<CardProject view=4 title="Operation Automations" src="/project1.png" body="Using Airtable as CMS and displaying the content in a Vue Project"></CardProject>
-					</div>
-					<div class="column">
-						<CardProject view=5 title="Operation Automations" src="/project1.png" body="Using Airtable as CMS and displaying the content in a Vue Project"></CardProject>
-					</div>
-					<div class="column">
-						<CardProject view=6 title="Operation Automations" src="/project1.png" body="Using Airtable as CMS and displaying the content in a Vue Project"></CardProject>
+				<div v-for="(item1, index1) in projects" :key="index1" class="columns" style="padding: 0px 10% 20px 10%">
+					<div v-for="(item2, index2) in item1" :key="index2" class="column">
+						<CardProject :index="index1" :view="index2" :title="item2.title" :src="item2.src" :body="item2.subtitle"></CardProject>
 					</div>
 				</div>
 			</div>
@@ -37,12 +20,50 @@
 </template>
 
 <script>
-	import CardProject from '../components/CardProject.vue'
+	import CardProject from '../components/CardProject.vue';
+
+	function readTextFile(file, callback) {
+		var rawFile = new XMLHttpRequest();
+		rawFile.overrideMimeType("application/json");
+		rawFile.open("GET", file, true);
+			rawFile.onreadystatechange = function() {
+			if (rawFile.readyState === 4 && rawFile.status == "200") {
+				callback(rawFile.responseText);
+			}
+		}
+		rawFile.send(null);
+	}
+
+	function getFile(file, callback){
+		readTextFile(file, function(text){
+			return callback(JSON.parse(text));
+		});
+	}
 
 	export default {
 		name : "Project",
 		components: {
 			CardProject
+		},
+		data : function () {
+			return {
+				projects : ''
+			}
+		},
+		methods : {
+			getData : function (file) {
+				return new Promise((resolve) => {
+					getFile(file, function(response){
+						resolve(response.data);
+					});
+				})
+			}
+		},
+		mounted: function() {
+			this.getData("project/project.json").then((data) => {
+				console.log(data);
+				this.projects = data;
+			});
 		}
 	};
 </script>
