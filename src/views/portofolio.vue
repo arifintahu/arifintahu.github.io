@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Home from './home.vue'
-import About from './about.vue'
-import Project from './project.vue'
-import Contact from './contact.vue'
+import Home from './home.vue';
+import About from './about.vue';
+import Project from './project.vue';
+import Contact from './contact.vue';
 
 export default {
   name: 'Portofolio',

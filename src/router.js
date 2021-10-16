@@ -1,21 +1,21 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Portofolio from "./views/portofolio.vue";
-import ProjectDetail from "./views/project/projectdetail.vue";
+import Vue from 'vue';
+import Router from 'vue-router';
+import Portofolio from './views/portofolio.vue';
+import ProjectDetail from './views/project/projectdetail.vue';
 
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: 'history',
   routes: [
     {
-      path: "/",
-      name: "portofolio",
+      path: '/',
+      name: 'portofolio',
       component: Portofolio
     },
     {
-      path: "/project/:index/:view",
-      name: "project",
+      path: '/project/:index/:view',
+      name: 'project',
       component: ProjectDetail,
       props: true
     }
