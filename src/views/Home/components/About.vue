@@ -9,7 +9,9 @@
     </section>
     <section style="padding-bottom: 100px">
       <div class="container is-fluid">
-        <h1 class="title has-text-centered" style="padding: 40px">What I Bring</h1>
+        <h1 class="title has-text-centered" style="padding: 40px">
+          What I Bring
+        </h1>
         <div class="columns" style="padding: 0 10% 0 10%">
           <div class="column">
             <CardAbout
@@ -39,10 +41,14 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">Where I Come From</h1>
-          <h5 class="has-text-justified is-size-6" style="padding: 20px 10% 20px 10%">
-            I come from Indonesia and I have graduated from bachelor of electrical engineering in
-            2019. Software is my passion and I have built several projects about Internet of Things,
-            Web App, Mobile App, Machine Leaning Model, and many more.
+          <h5
+            class="has-text-justified is-size-6"
+            style="padding: 20px 10% 20px 10%"
+          >
+            I come from Indonesia and I have graduated from bachelor of
+            electrical engineering in 2019. Software is my passion and I have
+            built several projects about Internet of Things, Web App, Mobile
+            App, Machine Leaning Model, and many more.
           </h5>
         </div>
       </div>
@@ -95,8 +101,8 @@
           </div>
         </div>
         <h1 class="has-text-centered is-size-4" style="padding: 40px">
-          Python • Pytorch • React • Angular • MongoDB • GraphQL • MQTT • Web Component • REST API •
-          Socket Io
+          Python • Pytorch • React • Angular • MongoDB • GraphQL • MQTT • Web
+          Component • REST API • Socket Io
         </h1>
       </div>
     </section>
@@ -104,7 +110,7 @@
 </template>
 
 <script>
-import CardAbout from '../components/CardAbout.vue';
+import CardAbout from '@/components/CardAbout.vue';
 
 export default {
   name: 'About',

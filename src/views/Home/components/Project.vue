@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import CardProject from '../components/CardProject.vue';
+import CardProject from '@/components/CardProject.vue';
 
 function readTextFile(file, callback) {
   var rawFile = new XMLHttpRequest();

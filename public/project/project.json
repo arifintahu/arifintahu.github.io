@@ -33,7 +33,13 @@
           "Measure quality parameter of river such as pH, Turbidity, Conductivity, and Temperature",
           "Deliver information about river quality"
         ],
-        "tools": ["Arduino", "GPRS Module", "Thingspeak", "Node.js", "Javascript"],
+        "tools": [
+          "Arduino",
+          "GPRS Module",
+          "Thingspeak",
+          "Node.js",
+          "Javascript"
+        ],
         "how": "Measurement system will gather all information of river through sensor. Then, Arduino will send data to network through GPRS Module. Last, the IoT Dashboard will deliver information about the river quality parameter.",
         "src": "/project3-rivermonitoring.png"
       }

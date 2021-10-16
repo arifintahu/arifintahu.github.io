@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Portofolio from './views/portofolio.vue';
-import ProjectDetail from './views/project/projectdetail.vue';
+import Home from '@/views/Home/view.vue';
+import ProjectDetail from '@/views/ProjectDetail/view.vue';
 
 Vue.use(Router);
 
@@ -10,12 +10,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'portofolio',
-      component: Portofolio
+      name: 'Home',
+      component: Home
     },
     {
       path: '/project/:index/:view',
-      name: 'project',
+      name: 'ProjectDetail',
       component: ProjectDetail,
       props: true
     }

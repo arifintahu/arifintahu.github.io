@@ -22,7 +22,9 @@
       </figure>
     </div>
     <div class="card-content">
-      <p class="title is-4" v-bind:style="{ 'text-align': center }">{{ title }}</p>
+      <p class="title is-4" v-bind:style="{ 'text-align': center }">
+        {{ title }}
+      </p>
       <div class="content">{{ body }}</div>
     </div>
   </div>

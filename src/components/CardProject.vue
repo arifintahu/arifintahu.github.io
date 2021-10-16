@@ -11,7 +11,12 @@
       <router-link
         :to="{ name: 'project', params: { index: index, view: view } }"
         class="button is-outlined"
-        style="display: block; margin-left: auto; margin-right: auto; width: 100%"
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+        "
         >View Project</router-link
       >
     </div>
