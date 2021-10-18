@@ -2,36 +2,19 @@
   <section class="hero is-light">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <div class="title has-text-dark">My Projects</div>
+        <div class="title has-text-dark">Recent Projects</div>
         <hr class="border-line has-background-dark">
         <div class="content">
-          <div class="content-item has-text-left">
-            <h3 class="item-company">PT Elnusa Tbk</h3>
-            <hr class="item-divider has-background-dark">
-            <div class="item-job">
-              <h5 class="job-title">Web Application Developer</h5>
-              <div class="job-period">January 2020 - Present</div>
-              <div class="job-skill has-text-weight-light">Skills: TypeScript, NodeJS, Express, MongoDB, Socket.io, AWS, EC2</div>
-              <div class="job-activity">
-                <ul>
-                  <li>Working on developing a scalable api for an IOS and Android App together with a team of 4.</li>
-                  <li>Implementing a real time Chat Microservice using WebSockets with Socket.IO and a MongoDB database to store messages</li>
-                </ul>
-              </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
             </div>
-          </div>
-          <div class="content-item has-text-left">
-            <h3 class="item-company">PT Elnusa Tbk</h3>
-            <hr class="item-divider has-background-dark">
-            <div class="item-job">
-              <h5 class="job-title">Web Application Developer</h5>
-              <div class="job-period">January 2020 - Present</div>
-              <div class="job-skill has-text-weight-light">Skills: TypeScript, NodeJS, Express, MongoDB, Socket.io, AWS, EC2</div>
-              <div class="job-activity">
-                <ul>
-                  <li>Working on developing a scalable api for an IOS and Android App together with a team of 4.</li>
-                  <li>Implementing a real time Chat Microservice using WebSockets with Socket.IO and a MongoDB database to store messages</li>
-                </ul>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
               </div>
             </div>
           </div>
@@ -65,16 +48,7 @@ export default {
   flex-wrap: wrap;
   gap: 50px;
 }
-.content .content-item {
-  max-width: 400px;
-}
-.content-item .item-divider {
-  height: 3px;
-  width: 100%;
-  margin: 12px 0;
-}
-
-.item-job .job-title, .item-job .job-period {
-  margin-bottom: 5px;
+.content .card {
+  max-width: 300px;
 }
 </style>
