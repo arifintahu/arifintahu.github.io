@@ -1,34 +1,32 @@
 <template>
-  <div>
-    <section class="hero is-dark is-fullheight-with-navbar">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="border-line"></div>
-          <p class="title">Miftahul Arifin</p>
-          <p class="subtitle">
-            Fullstack Web Developer. I love coding, and I aspire to become a
-            great developer. Curently, I code every day, and write articles
-            regularly.
-          </p>
-          <div class="border-line min"></div>
-          <div class="social-links">
-            <a href="https://github.com/arifintahu" target="_blank">
-              <font-awesome-icon :icon="['fab', 'github']" size="lg" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/miftahul-arifin/"
-              target="_blank"
-            >
-              <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
-            </a>
-            <a href="https://dev.to/arifintahu" target="_blank">
-              <font-awesome-icon :icon="['fab', 'dev']" size="lg" />
-            </a>
-          </div>
+  <section class="hero is-dark is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <hr class="border-line has-background-white">
+        <div class="title">Miftahul Arifin</div>
+        <div class="subtitle">
+          Fullstack Web Developer. I love coding, and I aspire to become a
+          great developer. Currently, I code every day, and write articles
+          regularly.
+        </div>
+        <hr class="border-line min has-background-white">
+        <div class="social-links">
+          <a href="https://github.com/arifintahu" target="_blank">
+            <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/miftahul-arifin/"
+            target="_blank"
+          >
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
+          </a>
+          <a href="https://dev.to/arifintahu" target="_blank">
+            <font-awesome-icon :icon="['fab', 'dev']" size="lg" />
+          </a>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -45,7 +43,7 @@ export default {
   max-width: 600px;
 }
 .container .border-line {
-  border-bottom: 3px solid white;
+  height: 3px;
   margin-bottom: 20px;
   width: 100%;
 }

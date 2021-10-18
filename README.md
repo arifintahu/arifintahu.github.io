@@ -26,5 +26,5 @@ npm run lint
 
 ### Deploy
 
-- git subtree push --prefix dist origin gh-pages --force
+- git subtree push --prefix dist origin gh-pages [--force]
 

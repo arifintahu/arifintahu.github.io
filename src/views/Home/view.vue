@@ -1,14 +1,17 @@
 <template>
   <div>
     <Greeting id="greeting" />
-    <About id="about" />
+    <Experience id="experience" />
     <Project id="project" />
+
+    <About id="about" />
     <Contact id="contact" />
   </div>
 </template>
 
 <script>
 import Greeting from './components/Greeting.vue';
+import Experience from './components/Experience.vue';
 import About from './components/About.vue';
 import Project from './components/Project.vue';
 import Contact from './components/Contact.vue';
@@ -17,8 +20,9 @@ export default {
   name: 'Home',
   components: {
     Greeting,
-    About,
+    Experience,
     Project,
+    About,
     Contact
   }
 };

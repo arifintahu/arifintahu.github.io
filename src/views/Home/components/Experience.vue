@@ -2,7 +2,7 @@
   <section class="hero is-light">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <div class="title has-text-dark">My Projects</div>
+        <div class="title has-text-dark">Experience</div>
         <hr class="border-line has-background-dark">
         <div class="content">
           <div class="content-item has-text-left">
