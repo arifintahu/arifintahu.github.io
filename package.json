@@ -53,6 +53,6 @@
     "last 2 versions"
   ],
   "lint-staged": {
-    "*.+(ts|json|md)": "prettier --config .prettierrc --write ."
+    "*.+(js|json|md|vue)": "prettier --config .prettierrc --write ."
   }
 }
