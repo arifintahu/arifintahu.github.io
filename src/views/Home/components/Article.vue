@@ -4,16 +4,13 @@
       <div class="container has-text-centered">
         <div class="title has-text-dark">Recent Articles</div>
         <hr class="border-line has-background-dark" />
-        <div class="content">
-          
-        </div>
+        <div class="content"></div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-
 export default {
   name: 'Article'
 };
