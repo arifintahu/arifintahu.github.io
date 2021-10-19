@@ -2,14 +2,13 @@
   <section class="hero is-dark is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <hr class="border-line has-background-white">
+        <hr class="border-line has-background-white" />
         <div class="title">Miftahul Arifin</div>
         <div class="subtitle">
-          Fullstack Web Developer. I love coding, and I aspire to become a
-          great developer. Currently, I code every day, and write articles
-          regularly.
+          Fullstack Web Developer. I love coding, and I aspire to become a great
+          developer. Currently, I code every day, and write articles regularly.
         </div>
-        <hr class="border-line min has-background-white">
+        <hr class="border-line min has-background-white" />
         <div class="social-links">
           <a href="https://github.com/arifintahu" target="_blank">
             <font-awesome-icon :icon="['fab', 'github']" size="lg" />

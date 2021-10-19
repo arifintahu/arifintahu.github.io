@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="title has-text-dark">Recent Projects</div>
-        <hr class="border-line has-background-dark">
+        <hr class="border-line has-background-dark" />
         <div class="content">
           <ItemProject />
           <ItemProject />
