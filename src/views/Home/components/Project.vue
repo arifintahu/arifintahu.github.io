@@ -5,19 +5,10 @@
         <div class="title has-text-dark">Recent Projects</div>
         <hr class="border-line has-background-dark">
         <div class="content">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
-              </div>
-            </div>
-          </div>
+          <ItemProject />
+          <ItemProject />
+          <ItemProject />
+          <ItemProject />
         </div>
       </div>
     </div>
@@ -25,9 +16,13 @@
 </template>
 
 <script>
+import ItemProject from '@/components/ItemProject.vue';
 
 export default {
-  name: 'Experience'
+  name: 'Experience',
+  components: {
+    ItemProject
+  }
 };
 </script>
 
@@ -36,7 +31,7 @@ export default {
   align-items: center;
 }
 .hero .hero-body {
-  max-width: 1000px;
+  max-width: 1100px;
 }
 .container .border-line {
   height: 3px;
@@ -46,9 +41,7 @@ export default {
 .container .content {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-}
-.content .card {
-  max-width: 300px;
+  justify-content: space-around;
+  gap: 30px;
 }
 </style>
