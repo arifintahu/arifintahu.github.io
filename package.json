@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --port 3000",
+    "prepare": "husky install",
+    "dev": "vue-cli-service serve --port 3000",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "prettier-format": "prettier --write ."
@@ -26,6 +27,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
     "prettier": "^2.4.1",
     "vue-template-compiler": "^2.6.14"
   },
@@ -48,5 +51,8 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "lint-staged": {
+    "*.+(js|json|md|vue)": "prettier --config .prettierrc --write ."
+  }
 }

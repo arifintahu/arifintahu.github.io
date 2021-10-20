@@ -2,19 +2,20 @@
   <div id="app">
     <Header />
     <router-view></router-view>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>Built by Miftahul Arifin.</p>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+
 export default {
-  components: { Header },
-  name: 'App'
+  name: 'App',
+  components: {
+    Header,
+    Footer
+  }
 };
 </script>
 
@@ -25,10 +26,5 @@ export default {
   display: block;
   position: relative;
   padding-bottom: 168px;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 </style>
