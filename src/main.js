@@ -2,7 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 library.add(faGithub);
 library.add(faLinkedin);
 library.add(faDev);
+library.add(faPaperPlane);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;

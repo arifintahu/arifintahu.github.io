@@ -1,33 +1,26 @@
 <template>
-  <div>
-    <section class="about hero is-light is-medium is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Get In Touch</h1>
-        </div>
-      </div>
-    </section>
-    <div
-      style="
-        padding: 50px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-wrap: nowrap;
-      "
-    >
-      <div class="card" style="width: 300px">
-        <div class="card-content" style="background-color: #fafafa">
-          <p class="title">Email</p>
-          <p class="subtitle">miftahul97@gmail.com</p>
-          <p class="title">Github</p>
-          <p class="subtitle">
-            <a href="https://github.com/arifintahu">github.com/arifintahu</a>
-          </p>
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="title has-text-light">Contact Me</div>
+        <hr class="border-line has-background-light" />
+        <div class="content">
+          <a href="https://github.com/arifintahu" target="_blank">
+            <font-awesome-icon :icon="['fab', 'github']" size="3x" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/miftahul-arifin/"
+            target="_blank"
+          >
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" />
+          </a>
+          <a href="mailto:miftahul97@gmail.com" target="_blank">
+            <font-awesome-icon :icon="['fas', 'paper-plane']" size="3x" />
+          </a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -35,3 +28,22 @@ export default {
   name: 'Contact'
 };
 </script>
+
+<style scoped>
+.hero {
+  align-items: center;
+}
+.hero .hero-body {
+  max-width: 1100px;
+}
+.container .border-line {
+  height: 3px;
+  width: 60px;
+  margin: 0 auto 20px auto;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+</style>
