@@ -11,8 +11,15 @@
 </template>
 
 <script>
+import { getArticles } from '@/repositories/articles';
+
 export default {
-  name: 'Article'
+  name: 'Article',
+  mounted() {
+    getArticles().then((data) => {
+      console.log(data);
+    });
+  }
 };
 </script>
 
