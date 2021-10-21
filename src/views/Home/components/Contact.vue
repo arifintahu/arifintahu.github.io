@@ -46,7 +46,11 @@ export default {
   justify-content: center;
   gap: 1.5rem;
 }
-.content a {
+.content a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
+  color: inherit;
 }
 </style>
