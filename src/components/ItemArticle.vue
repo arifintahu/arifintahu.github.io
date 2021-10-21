@@ -49,6 +49,12 @@ export default {
 .card-content .author {
   margin-bottom: 12px;
 }
+.title a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+}
 .title a:hover {
   text-decoration: underline;
 }

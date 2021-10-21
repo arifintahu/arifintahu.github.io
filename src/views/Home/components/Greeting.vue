@@ -58,7 +58,11 @@ export default {
   justify-content: center;
   gap: 12px;
 }
-.social-links a {
+.social-links a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
+  color: inherit;
 }
 </style>
