@@ -12,7 +12,7 @@ const data = [
   },
   {
     id: 2,
-    company: 'PT Elnusa Tbk.',
+    company: 'PT Elnusa Tbk. 2',
     title: 'Web Application Developer',
     period: 'January 2020 - Present',
     skill: 'TypeScript, NodeJS, Express, MongoDB, Socket.io, AWS, EC2',

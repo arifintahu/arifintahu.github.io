@@ -9,7 +9,7 @@
           developer. Currently, I code every day, and write articles regularly.
         </div>
         <hr class="border-line min has-background-white" />
-        <div class="social-links">
+        <div class="social-links has-text-light">
           <a href="https://github.com/arifintahu" target="_blank">
             <font-awesome-icon :icon="['fab', 'github']" size="lg" />
           </a>
@@ -57,5 +57,8 @@ export default {
   display: flex;
   justify-content: center;
   gap: 12px;
+}
+.social-links a {
+  text-decoration: none;
 }
 </style>

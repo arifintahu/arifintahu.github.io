@@ -4,7 +4,7 @@
       <div class="container has-text-centered">
         <div class="title has-text-light">Contact Me</div>
         <hr class="border-line has-background-light" />
-        <div class="content">
+        <div class="content has-text-light">
           <a href="https://github.com/arifintahu" target="_blank">
             <font-awesome-icon :icon="['fab', 'github']" size="3x" />
           </a>
@@ -45,5 +45,8 @@ export default {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+}
+.content a {
+  text-decoration: none;
 }
 </style>

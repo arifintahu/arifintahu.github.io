@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Greeting id="greeting" />
+    <Greeting id="home" />
     <Experience id="experience" />
     <Project id="project" />
     <About id="about" />
