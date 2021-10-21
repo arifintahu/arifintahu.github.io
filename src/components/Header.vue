@@ -37,8 +37,12 @@
             href="https://github.com/arifintahu/arifintahu.github.io"
             target="__blank"
             class="navbar-item"
-            >Github</a
           >
+            <span class="icon">
+              <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+            </span>
+            <span>Star</span>
+          </a>
         </div>
       </div>
     </div>
@@ -55,3 +59,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.navbar-end a.navbar-item {
+  gap: 5px;
+}
+</style>
