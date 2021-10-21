@@ -27,13 +27,18 @@
         :class="{ 'is-active': showNav }"
       >
         <div class="navbar-start">
-          <a class="navbar-item" href="/#home"> Home </a>
-          <a class="navbar-item" href="/#about"> About </a>
-          <a class="navbar-item" href="/#project"> Projects </a>
-          <a class="navbar-item" href="/#contact"> Contact </a>
+          <a class="navbar-item" href="/#home">Home</a>
+          <a class="navbar-item" href="/#project">Projects</a>
+          <a class="navbar-item" href="/#about">About</a>
+          <a class="navbar-item" href="/#contact">Contact</a>
         </div>
         <div class="navbar-end">
-          <a class="navbar-item">Github</a>
+          <a
+            href="https://github.com/arifintahu/arifintahu.github.io"
+            target="__blank"
+            class="navbar-item"
+            >Github</a
+          >
         </div>
       </div>
     </div>

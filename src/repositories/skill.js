@@ -13,7 +13,7 @@ const data = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     title: 'Back-end Skills',
     skills: [
       {

@@ -5,49 +5,23 @@
         <div class="title has-text-dark">Experience</div>
         <hr class="border-line has-background-dark" />
         <div class="content">
-          <div class="content-item has-text-left">
-            <h3 class="item-company">PT Elnusa Tbk</h3>
+          <div
+            v-for="item in experiences"
+            :key="item.id"
+            class="content-item has-text-left"
+          >
+            <h3 class="item-company">{{ item.company }}</h3>
             <hr class="item-divider has-background-dark" />
             <div class="item-job">
-              <h5 class="job-title">Web Application Developer</h5>
-              <div class="job-period">January 2020 - Present</div>
+              <h5 class="job-title">{{ item.title }}</h5>
+              <div class="job-period">{{ item.period }}</div>
               <div class="job-skill has-text-weight-light">
-                Skills: TypeScript, NodeJS, Express, MongoDB, Socket.io, AWS,
-                EC2
+                Skills: {{ item.skill }}
               </div>
               <div class="job-activity">
                 <ul>
-                  <li>
-                    Working on developing a scalable api for an IOS and Android
-                    App together with a team of 4.
-                  </li>
-                  <li>
-                    Implementing a real time Chat Microservice using WebSockets
-                    with Socket.IO and a MongoDB database to store messages
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-item has-text-left">
-            <h3 class="item-company">PT Elnusa Tbk</h3>
-            <hr class="item-divider has-background-dark" />
-            <div class="item-job">
-              <h5 class="job-title">Web Application Developer</h5>
-              <div class="job-period">January 2020 - Present</div>
-              <div class="job-skill has-text-weight-light">
-                Skills: TypeScript, NodeJS, Express, MongoDB, Socket.io, AWS,
-                EC2
-              </div>
-              <div class="job-activity">
-                <ul>
-                  <li>
-                    Working on developing a scalable api for an IOS and Android
-                    App together with a team of 4.
-                  </li>
-                  <li>
-                    Implementing a real time Chat Microservice using WebSockets
-                    with Socket.IO and a MongoDB database to store messages
+                  <li v-for="(activity, index) in item.activities" :key="index">
+                    {{ activity }}
                   </li>
                 </ul>
               </div>
@@ -60,8 +34,17 @@
 </template>
 
 <script>
+import { getExperiences } from '@/repositories/experiences';
 export default {
-  name: 'Experience'
+  name: 'Experience',
+  data() {
+    return {
+      experiences: []
+    };
+  },
+  mounted() {
+    this.experiences = getExperiences();
+  }
 };
 </script>
 

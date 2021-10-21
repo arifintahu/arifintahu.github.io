@@ -5,39 +5,23 @@
         <div class="title has-text-dark">About Me</div>
         <hr class="border-line has-background-dark" />
         <div class="content">
-          <div class="content-item has-text-left">
-            <h3 class="item-title">Front-end Skills</h3>
+          <div
+            v-for="item in skills"
+            :key="item.id"
+            class="content-item has-text-left"
+          >
+            <h3 class="item-title">{{ item.title }}</h3>
             <hr class="item-divider has-background-dark" />
-            <div class="item-skill">
-              <h5 class="skill-title">Web Application Developer</h5>
+            <div
+              v-for="(skill, index) in item.skills"
+              :key="index"
+              class="item-skill"
+            >
+              <h5 class="skill-title">{{ skill.title }}</h5>
               <div class="skill-detail">
                 <ul>
-                  <li>
-                    Working on developing a scalable api for an IOS and Android
-                    App together with a team of 4.
-                  </li>
-                  <li>
-                    Implementing a real time Chat Microservice using WebSockets
-                    with Socket.IO and a MongoDB database to store messages
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-item has-text-left">
-            <h3 class="item-company">Back-end Skills</h3>
-            <hr class="item-divider has-background-dark" />
-            <div class="item-skill">
-              <h5 class="skill-title">Web Application Developer</h5>
-              <div class="skill-detail">
-                <ul>
-                  <li>
-                    Working on developing a scalable api for an IOS and Android
-                    App together with a team of 4.
-                  </li>
-                  <li>
-                    Implementing a real time Chat Microservice using WebSockets
-                    with Socket.IO and a MongoDB database to store messages
+                  <li v-for="(desc, key) in skill.descriptions" :key="key">
+                    {{ desc }}
                   </li>
                 </ul>
               </div>
@@ -50,8 +34,17 @@
 </template>
 
 <script>
+import { getSkills } from '@/repositories/skill';
 export default {
-  name: 'About'
+  name: 'About',
+  data() {
+    return {
+      skills: []
+    };
+  },
+  mounted() {
+    this.skills = getSkills();
+  }
 };
 </script>
 

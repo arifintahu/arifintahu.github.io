@@ -4,20 +4,31 @@
       <div class="container has-text-centered">
         <div class="title has-text-dark">Recent Articles</div>
         <hr class="border-line has-background-dark" />
-        <div class="content"></div>
+        <div class="content">
+          <ItemArticle v-for="item in articles" :key="item.id" :item="item" />
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import ItemArticle from '@/components/ItemArticle.vue';
 import { getArticles } from '@/repositories/articles';
 
 export default {
   name: 'Article',
+  components: {
+    ItemArticle
+  },
+  data() {
+    return {
+      articles: []
+    };
+  },
   mounted() {
     getArticles().then((data) => {
-      console.log(data);
+      this.articles = data;
     });
   }
 };
