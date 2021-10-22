@@ -93,4 +93,10 @@ export default {
   object-fit: cover;
   border-radius: var(--radius);
 }
+@media (hover: none) {
+  .card .card-title {
+    opacity: 100;
+    bottom: 0;
+  }
+}
 </style>
