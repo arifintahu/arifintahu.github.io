@@ -73,4 +73,7 @@ export default {
   width: 100%;
   margin: 12px 0;
 }
+.content-item .item-skill {
+  margin-bottom: 12px;
+}
 </style>
