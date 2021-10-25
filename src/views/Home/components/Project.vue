@@ -5,10 +5,7 @@
         <div class="title has-text-dark">Recent Projects</div>
         <hr class="border-line has-background-dark" />
         <div class="content">
-          <ItemProject />
-          <ItemProject />
-          <ItemProject />
-          <ItemProject />
+          <ItemProject v-for="item in projects" :key="item.id" :item="item" />
         </div>
       </div>
     </div>
@@ -17,11 +14,20 @@
 
 <script>
 import ItemProject from '@/components/ItemProject.vue';
+import { getProjects } from '@/repositories/projects';
 
 export default {
-  name: 'Experience',
+  name: 'Project',
   components: {
     ItemProject
+  },
+  data() {
+    return {
+      projects: []
+    };
+  },
+  mounted() {
+    this.projects = getProjects();
   }
 };
 </script>

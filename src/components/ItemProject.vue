@@ -2,16 +2,13 @@
   <div>
     <div class="card" @click="showModal">
       <div class="card-image">
-        <img
-          src="https://cdn.mos.cms.futurecdn.net/jU8HAQWqxPMgH3g6qSbA5.jpg"
-          alt="Placeholder image"
-        />
+        <img :src="item.images[0].url" :alt="item.images[0].description" />
       </div>
       <div class="card-title has-background-dark has-text-light">
-        Montoring System
+        {{ item.title }}
       </div>
     </div>
-    <ModalProject :show="isShowModal" @close="handleClose" />
+    <ModalProject :item="item" :show="isShowModal" @close="handleClose" />
   </div>
 </template>
 
@@ -20,11 +17,7 @@ import ModalProject from './ModalProject.vue';
 export default {
   name: 'ItemProject',
   props: {
-    title: String,
-    body: String,
-    src: String,
-    view: String,
-    index: String
+    item: Object
   },
   components: {
     ModalProject
@@ -92,6 +85,7 @@ export default {
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius);
+  object-position: left top;
 }
 @media (hover: none) {
   .card .card-title {
