@@ -3,10 +3,11 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <hr class="border-line has-background-white" />
-        <div class="title">Miftahul Arifin</div>
+        <div class="title">Hello!</div>
         <div class="subtitle">
-          Fullstack Web Developer. I love coding, and I aspire to become a great
-          developer. Currently, I code every day, and write articles regularly.
+          I'm Arifin, Fullstack Web Developer. I love coding, and I aspire to
+          become a great developer. Currently, I code every day, and write
+          articles regularly.
         </div>
         <hr class="border-line min has-background-white" />
         <div class="social-links has-text-light">
