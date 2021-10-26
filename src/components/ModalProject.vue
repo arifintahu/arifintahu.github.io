@@ -10,17 +10,32 @@
         <p class="body-description has-text-justified">
           {{ item.description }}
         </p>
-        <p class="body-skill has-text-justified">
+        <p class="body-description has-text-justified">
+          Year Built:
+          <span class="has-text-weight-bold">{{ item.year }}</span>
+        </p>
+        <p class="body-description has-text-justified">
           Skills:
           <span class="has-text-weight-bold">{{ item.skill }}</span>
         </p>
+        <p class="has-text-justified">Screenshots:</p>
         <div class="body-image">
-          <img
+          <div
             v-for="(image, index) in item.images"
             :key="index"
-            :src="image.url"
-            :alt="image.description"
-          />
+            class="image"
+            @click="handleShowImage(image.url)"
+            :class="{ show: image.url == showImage }"
+          >
+            <img :src="image.url" :alt="image.description" />
+            <div
+              class="close"
+              :class="{ show: image.url == showImage }"
+              @click="handleShowImage(image.url)"
+            >
+              Click Image to close
+            </div>
+          </div>
         </div>
       </section>
       <footer class="modal-card-foot has-background-white">
@@ -44,9 +59,21 @@ export default {
     show: Boolean,
     item: Object
   },
+  data() {
+    return {
+      showImage: ''
+    };
+  },
   methods: {
     closeModal() {
       this.$emit('close', false);
+    },
+    handleShowImage(url) {
+      if (url == this.showImage) {
+        this.showImage = '';
+      } else {
+        this.showImage = url;
+      }
     }
   }
 };
@@ -59,14 +86,52 @@ export default {
 .modal-card-head .modal-card-title {
   margin: 0;
 }
+.modal-card {
+  position: relative;
+}
 .modal-card-body .body-image {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
 }
-.body-image img {
+.body-image .image {
   max-width: 280px;
+  cursor: pointer;
+}
+.image .close {
+  display: none;
+}
+.image .close.show {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.image.show {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+}
+.image.show img {
+  height: 100%;
+  object-fit: cover;
+}
+.modal-card-body .body-description {
+  margin-bottom: 6px;
+}
+.image img {
+  width: 100%;
   height: auto;
 }
 .modal-card-foot .button-group {
