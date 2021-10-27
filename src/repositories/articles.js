@@ -1,6 +1,8 @@
 export function getArticles() {
   return new Promise((resolve) => {
-    fetch('https://dev.to/api/articles/latest?username=arifintahu&per_page=3')
+    fetch('https://dev.to/api/articles/latest?username=arifintahu&per_page=5', {
+      cache: 'no-cache'
+    })
       .then((response) => response.json())
       .then((data) => {
         resolve(data);
