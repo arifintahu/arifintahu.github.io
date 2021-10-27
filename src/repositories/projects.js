@@ -98,7 +98,7 @@ const data = [
     year: '2020',
     title: 'MosQu: Mosque Management',
     description: `This project was made for joing 1000 start up bootcamp held by Kominfo Indonesia. It delivered app management 
-    for mosque stakeholder. It built with VueJS and Vuetofy as Front-end, while the back-end is built using NodeJS, Express, and 
+    for mosque stakeholder. It was built with VueJS and Vuetofy as Front-end, while the back-end is built using NodeJS, Express, and 
     Socketio for realtime communication. The user could add financial records, send whatsapp blast, and record people profile.
     `,
     skill: 'NodeJS, Express, PostgreSQL, VueJS, Vuetify, JWT, Socketio',
@@ -120,7 +120,7 @@ const data = [
     year: '2020',
     title: 'DiRumahAja: Online Presence',
     description: `This project was made during working in PT Elnusa Tbk. DiRumahAja is an online presence app for employee. It records thousands user
-      activities such as presence and geolocation. It built using VueJS as Front-end and NodeJS microservice architecture with MQTT broker as back-end.
+      activities such as presence and geolocation. It was built using VueJS as Front-end and NodeJS microservice architecture with MQTT broker as back-end.
       The user could submit online presence through the app and then the admin user could figure out the dashboard.
     `,
     skill: 'NodeJS, Express, PostgreSQL, VueJS, Microservices, MQTT, AMQP',
@@ -147,7 +147,7 @@ const data = [
     title: 'Movie Recommender App',
     description: `This project was made for implementation of user based collaborative filtering on movies dataset. 
       User-Based Collaborative Filtering is a technique used to predict the items that a user might like on the basis of 
-      ratings given to that item by the other users who have similar taste with that of the target user. It built 
+      ratings given to that item by the other users who have similar taste with that of the target user. It was built 
       using Python and Flask as web server. The user could select any user then it shows the recommendation movies 
       based on similar tastes.
     `,
@@ -158,6 +158,29 @@ const data = [
       {
         url: require('@/assets/images/projects/movieapp.png'),
         description: 'DiRumahAja'
+      }
+    ]
+  },
+  {
+    id: 8,
+    year: '2019',
+    title: 'QBLearning: Exam Managemet',
+    description: `This project was made for QBLearning project. There are several features such as Question Writer, 
+    Question Bank, Exam Management, and so on. It was built using NodeJs and Typescript with GraphQL as API. Then, the frontend 
+    was built using VueJS and Apollo for GraphQL API Connection. The user could add some questions and exams inside the app for 
+    exam managament.
+    `,
+    skill: 'NodeJS, Typescript, GraphQL, Vue, Apollo',
+    source: '',
+    preview: '',
+    images: [
+      {
+        url: require('@/assets/images/projects/qblearning-1.jpeg'),
+        description: 'QBLearning'
+      },
+      {
+        url: require('@/assets/images/projects/qblearning-2.jpeg'),
+        description: 'QBLearning'
       }
     ]
   }
