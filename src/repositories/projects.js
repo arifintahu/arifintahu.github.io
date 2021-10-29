@@ -1,6 +1,35 @@
 const data = [
   {
-    id: 1,
+    year: '2021',
+    title: 'E-Mobility: Choose, Rent, and Pay',
+    description: `This project was made from client. Emobility is Electric Bike Renting App which could register, rent, and pay. 
+    It was built using VueJS, Elemen Ui, and TailwindCSS for front-end. Then the backend was built using MoleculerJS microservices. 
+    The user could choose bike, pay, and activate device through the app.
+    `,
+    skill:
+      'NodeJS, MoleculerJS, PostgreSQL, VueJS, Element UI, TailwindCSS, Microservices',
+    source: '',
+    preview: '',
+    images: [
+      {
+        url: require('@/assets/images/projects/emobility-1.png'),
+        description: 'Emobility'
+      },
+      {
+        url: require('@/assets/images/projects/emobility-2.png'),
+        description: 'Emobility'
+      },
+      {
+        url: require('@/assets/images/projects/emobility-3.png'),
+        description: 'Emobility'
+      },
+      {
+        url: require('@/assets/images/projects/emobility-4.png'),
+        description: 'Emobility'
+      }
+    ]
+  },
+  {
     year: '2021',
     title: 'Smartmeter: IoT Monitoring',
     description: `This project was made during working in PT Elnusa Tbk. Smartmeter is an IoT monitoring application system which
@@ -27,7 +56,6 @@ const data = [
     ]
   },
   {
-    id: 2,
     year: '2021',
     title: 'Project Structure API',
     description: `This project was made for Project Structure Template especially REST API. Building project with 
@@ -50,7 +78,6 @@ const data = [
     ]
   },
   {
-    id: 3,
     year: '2021',
     title: 'To Do List App',
     description: `This project was made in as a way to participate Gethired Devcode Front-end Challenge. I
@@ -72,7 +99,6 @@ const data = [
     ]
   },
   {
-    id: 4,
     year: '2021',
     title: 'Overblast: Bulk Whatsapp Sender App',
     description: `This project was made for sending blast messages to hundreds of Whatsapp number. It built using NextJS as server 
@@ -94,7 +120,6 @@ const data = [
     ]
   },
   {
-    id: 5,
     year: '2020',
     title: 'MosQu: Mosque Management',
     description: `This project was made for joing 1000 start up bootcamp held by Kominfo Indonesia. It delivered app management 
@@ -116,7 +141,6 @@ const data = [
     ]
   },
   {
-    id: 6,
     year: '2020',
     title: 'DiRumahAja: Online Presence',
     description: `This project was made during working in PT Elnusa Tbk. DiRumahAja is an online presence app for employee. It records thousands user
@@ -142,7 +166,6 @@ const data = [
     ]
   },
   {
-    id: 7,
     year: '2020',
     title: 'Movie Recommender App',
     description: `This project was made for implementation of user based collaborative filtering on movies dataset. 
@@ -162,7 +185,6 @@ const data = [
     ]
   },
   {
-    id: 8,
     year: '2019',
     title: 'QBLearning: Exam Managemet',
     description: `This project was made for QBLearning project. There are several features such as Question Writer, 
