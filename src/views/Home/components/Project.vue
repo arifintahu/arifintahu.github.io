@@ -5,7 +5,11 @@
         <div class="title has-text-dark">Recent Projects</div>
         <hr class="border-line has-background-dark" />
         <div class="content">
-          <ItemProject v-for="item in projects" :key="item.id" :item="item" />
+          <ItemProject
+            v-for="(item, index) in projects"
+            :key="index"
+            :item="item"
+          />
         </div>
       </div>
     </div>
