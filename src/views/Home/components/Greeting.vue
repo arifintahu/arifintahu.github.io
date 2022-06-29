@@ -5,9 +5,9 @@
         <hr class="border-line has-background-white" />
         <div class="title">Hello!</div>
         <div class="subtitle">
-          I'm Arifin, Fullstack Web Developer. I love coding, and I aspire to
-          become a great developer. Currently, I code every day, and write
-          articles regularly.
+          I'm Arifin, a Backend Engineer. I love coding, and I aspire to become
+          a great engineer. Currently, I code every day, and write articles
+          regularly.
         </div>
         <hr class="border-line min has-background-white" />
         <div class="social-links has-text-light">
