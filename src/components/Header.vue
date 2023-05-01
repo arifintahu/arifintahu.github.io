@@ -6,7 +6,7 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/"> Miftahul Arifin </a>
+        <a class="navbar-item" href="/">{{ profile ? profile.name : '' }}</a>
         <a
           role="button"
           class="navbar-burger burger"
@@ -50,12 +50,18 @@
 </template>
 
 <script>
+import { getProfile } from '@/repositories/profile';
+
 export default {
   name: 'Header',
   data() {
     return {
-      showNav: false
+      showNav: false,
+      profile: {}
     };
+  },
+  mounted() {
+    this.profile = getProfile();
   }
 };
 </script>
