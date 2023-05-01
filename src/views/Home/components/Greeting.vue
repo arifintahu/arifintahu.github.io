@@ -15,6 +15,9 @@
           <a :href="profile ? profile.social.linkedin : ''" target="_blank">
             <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
           </a>
+          <a :href="profile ? profile.social.twitter : ''" target="_blank">
+            <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
+          </a>
           <a :href="profile ? profile.social.dev : ''" target="_blank">
             <font-awesome-icon :icon="['fab', 'dev']" size="lg" />
           </a>
