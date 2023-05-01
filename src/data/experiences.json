@@ -24,13 +24,13 @@
       "Responsible for building single page applications using VueJS",
       "Responsible for building API with microservices architecture using NodeJs"
     ],
-    "isShow": true
+    "isShow": false
   },
   {
     "id": 3,
     "company": "Bibit.id",
     "title": "Backend Engineer",
-    "period": "December 2021 - Present",
+    "period": "December 2021 - October 2022",
     "skill": "NodeJS, MySQL, AWS, Caching, Unit Test, Serverless, Elastic",
     "activities": [
       "Responsible for defining technical requirements and designing system architectures",
@@ -40,6 +40,23 @@
       "Refactored code and improved code quality",
       "Assisted team with reviewing clean and coding efficiency",
       "Delivered new and enhancement features on time"
+    ],
+    "isShow": true
+  },
+  {
+    "id": 4,
+    "company": "S16 Research Ventures",
+    "title": "Backend Engineer",
+    "period": "October 2022 - Present",
+    "skill": "Golang, Typescript, GRPC, Cosmos SDK, Ansible, CosmJs, Blockchain",
+    "activities": [
+      "Responsible for engineering team",
+      "Responsible for planning projects with its technical requirements",
+      "Reasearched new innovation on cosmos-based blockchain",
+      "Built a monitoring and alerting system for validator nodes",
+      "Designed and built interchain account management chain",
+      "Developed community tools especially for cosmos ecosystem",
+      "Improved code quality and documentation"
     ],
     "isShow": true
   }
