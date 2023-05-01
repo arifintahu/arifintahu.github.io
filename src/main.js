@@ -6,7 +6,8 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
-  faDev
+  faDev,
+  faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -14,6 +15,7 @@ library.add(faGithub);
 library.add(faLinkedin);
 library.add(faDev);
 library.add(faPaperPlane);
+library.add(faTwitter);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;

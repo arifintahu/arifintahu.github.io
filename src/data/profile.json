@@ -1,11 +1,12 @@
 {
   "name": "Miftahul Arifin",
   "greeting": "Hello!",
-  "intro": "I'm Arifin, a Backend Engineer. I love coding, and I aspire to become a great engineer. Currently, I code every day, and write article regularly.",
+  "intro": "I'm Arifin, a software engineer. Currently, I'm working on a Cosmos-based blockchain. If you're interested in collaborating with me, please feel free to reach out.",
   "email": "miftahul97@gmail.com",
   "social": {
     "github": "https://github.com/arifintahu",
     "linkedin": "https://www.linkedin.com/in/miftahul-arifin/",
+    "twitter": "https://twitter.com/arifintahu",
     "dev": "https://dev.to/arifintahu"
   }
 }
