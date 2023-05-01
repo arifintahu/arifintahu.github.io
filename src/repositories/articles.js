@@ -1,8 +1,11 @@
-export function getArticles() {
+export function getArticles(username, perPage = 5) {
   return new Promise((resolve) => {
-    fetch('https://dev.to/api/articles/latest?username=arifintahu&per_page=5', {
-      cache: 'no-cache'
-    })
+    fetch(
+      `https://dev.to/api/articles/latest?username=${username}&per_page=${perPage}`,
+      {
+        cache: 'no-cache'
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         resolve(data);

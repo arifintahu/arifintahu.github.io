@@ -27,7 +27,7 @@ export default {
     };
   },
   mounted() {
-    getArticles().then((data) => {
+    getArticles('arifintahu').then((data) => {
       this.articles = data;
     });
   }

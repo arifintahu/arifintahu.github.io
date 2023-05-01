@@ -3,24 +3,19 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <hr class="border-line has-background-white" />
-        <div class="title">Hello!</div>
+        <div class="title">{{ profile ? profile.greeting : '' }}</div>
         <div class="subtitle">
-          I'm Arifin, a Backend Engineer. I love coding, and I aspire to become
-          a great engineer. Currently, I code every day, and write articles
-          regularly.
+          {{ profile ? profile.intro : '' }}
         </div>
         <hr class="border-line min has-background-white" />
         <div class="social-links has-text-light">
-          <a href="https://github.com/arifintahu" target="_blank">
+          <a :href="profile ? profile.social.github : ''" target="_blank">
             <font-awesome-icon :icon="['fab', 'github']" size="lg" />
           </a>
-          <a
-            href="https://www.linkedin.com/in/miftahul-arifin/"
-            target="_blank"
-          >
+          <a :href="profile ? profile.social.linkedin : ''" target="_blank">
             <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
           </a>
-          <a href="https://dev.to/arifintahu" target="_blank">
+          <a :href="profile ? profile.social.dev : ''" target="_blank">
             <font-awesome-icon :icon="['fab', 'dev']" size="lg" />
           </a>
         </div>
@@ -30,8 +25,18 @@
 </template>
 
 <script>
+import { getProfile } from '@/repositories/profile';
+
 export default {
-  name: 'Greeting'
+  name: 'Greeting',
+  data() {
+    return {
+      profile: {}
+    };
+  },
+  mounted() {
+    this.profile = getProfile();
+  }
 };
 </script>
 
