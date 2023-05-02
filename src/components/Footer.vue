@@ -4,7 +4,7 @@
       <p>
         Designed and built by
         <a class="has-text-light" href="https://github.com/arifintahu"
-          >Miftahul Arifin.</a
+          ><i>Miftahul Arifin</i>.</a
         >
       </p>
     </div>
