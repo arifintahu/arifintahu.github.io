@@ -1,32 +1,26 @@
 <template>
-  <section class="hero is-light">
+  <section class="hero is-dark is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <div class="title has-text-dark">About Me</div>
-        <hr class="border-line has-background-dark" />
-        <div class="content">
-          <div
-            v-for="item in skills"
-            :key="item.id"
-            class="content-item has-text-left"
-          >
-            <h3 class="item-title">{{ item.title }}</h3>
-            <hr class="item-divider has-background-dark" />
-            <div
-              v-for="(skill, index) in item.skills"
-              :key="index"
-              class="item-skill"
-            >
-              <h5 class="skill-title">{{ skill.title }}</h5>
-              <div class="skill-detail">
-                <ul>
-                  <li v-for="(desc, key) in skill.descriptions" :key="key">
-                    {{ desc }}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <hr class="border-line has-background-white" />
+        <div class="title">{{ profile ? profile.greeting : '' }}</div>
+        <div class="subtitle">
+          {{ profile ? profile.intro : '' }}
+        </div>
+        <hr class="border-line min has-background-white" />
+        <div class="social-links has-text-light">
+          <a :href="profile ? profile.social.github : ''" target="_blank">
+            <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+          </a>
+          <a :href="profile ? profile.social.linkedin : ''" target="_blank">
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
+          </a>
+          <a :href="profile ? profile.social.twitter : ''" target="_blank">
+            <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
+          </a>
+          <a :href="profile ? profile.social.dev : ''" target="_blank">
+            <font-awesome-icon :icon="['fab', 'dev']" size="lg" />
+          </a>
         </div>
       </div>
     </div>
@@ -34,16 +28,17 @@
 </template>
 
 <script>
-import { getSkills } from '@/repositories/skill';
+import { getProfile } from '@/repositories/profile';
+
 export default {
   name: 'About',
   data() {
     return {
-      skills: []
+      profile: {}
     };
   },
   mounted() {
-    this.skills = getSkills();
+    this.profile = getProfile();
   }
 };
 </script>
@@ -53,27 +48,30 @@ export default {
   align-items: center;
 }
 .hero .hero-body {
-  max-width: 1100px;
+  max-width: 600px;
 }
 .container .border-line {
   height: 3px;
-  width: 60px;
-  margin: 0 auto 50px auto;
-}
-.container .content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-.content .content-item {
-  max-width: 400px;
-}
-.content-item .item-divider {
-  height: 1px;
+  margin-bottom: 20px;
   width: 100%;
-  margin: 12px 0;
 }
-.content-item .item-skill {
-  margin-bottom: 12px;
+.container .title {
+  margin-bottom: 40px;
+}
+.border-line.min {
+  width: 100px;
+  margin: 0 auto 20px auto;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.social-links a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

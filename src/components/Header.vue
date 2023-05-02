@@ -6,7 +6,9 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">{{ profile ? profile.name : '' }}</a>
+        <p class="navbar-item" id="logo-text">
+          {{ profile ? profile.name : '' }}
+        </p>
         <a
           role="button"
           class="navbar-burger burger"
@@ -26,23 +28,11 @@
         class="navbar-menu"
         :class="{ 'is-active': showNav }"
       >
-        <div class="navbar-start">
-          <a class="navbar-item" href="/#home">Home</a>
-          <a class="navbar-item" href="/#project">Projects</a>
-          <a class="navbar-item" href="/#about">About</a>
-          <a class="navbar-item" href="/#contact">Contact</a>
-        </div>
         <div class="navbar-end">
-          <a
-            href="https://github.com/arifintahu/arifintahu.github.io"
-            target="__blank"
-            class="navbar-item"
-          >
-            <span class="icon">
-              <font-awesome-icon :icon="['fab', 'github']" size="lg" />
-            </span>
-            <span>Star</span>
-          </a>
+          <a class="navbar-item" href="/#about">About</a>
+          <a class="navbar-item" href="/#project">Projects</a>
+          <a class="navbar-item" href="/#article">Articles</a>
+          <a class="navbar-item" href="/#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -69,5 +59,10 @@ export default {
 <style scoped>
 .navbar-end a.navbar-item {
   gap: 5px;
+}
+
+#logo-text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 </style>
