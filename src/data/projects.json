@@ -1,10 +1,91 @@
 [
   {
+    "year": "2024",
+    "title": "CW Account Management",
+    "description": "CW Account Management is a smart contract built using CosmWasm, designed to facilitate efficient and secure account management on the blockchain. This project aims to provide a robust framework for handling various account-related operations, including account creation, management, and access control, leveraging the capabilities of CosmWasm.",
+    "skill": "Rust, Smart Contract, CosmWasm",
+    "source": "https://github.com/arifintahu/cw-account-management",
+    "demo": "",
+    "preview": "",
+    "images": [
+      {
+        "url": "/images/projects/cw-account-1.jpeg",
+        "description": "CW Account Management"
+      }
+    ],
+    "isShow": true
+  },
+  {
+    "year": "2024",
+    "title": "Moscha - Chatbot for Cosmos Chains",
+    "description": "Moscha is an interactive chatbot designed specifically for engaging with Cosmos chains. Our primary objective is to provide seamless and meaningful interactions for users. Recognizing that some users lack technical expertise, we aim to address any technical issues that may arise during their interactions with the chains. As a solution, we enable users to execute transactions and seek assistance through the chatbot.",
+    "skill": "NestJs, Typescript, ReactJS, CosmJS, ChakraUI",
+    "source": "https://github.com/arifintahu/moscha-backend",
+    "demo": "https://www.youtube.com/watch?v=M_imrvShkqs",
+    "preview": "",
+    "images": [
+      {
+        "url": "/images/projects/moscha-1.png",
+        "description": "Moscha"
+      }
+    ],
+    "isShow": true
+  },
+  {
+    "year": "2023",
+    "title": "Dexplorer - Disposable Explorer",
+    "description": "Dexplorer is a disposable light explorer for Cosmos-based blockchains. It is designed to connect to any Cosmos SDK chain using only WebSocket RPC. This can be useful when developing Cosmos-based chains and exploring blockchain data through a UI.",
+    "skill": "Typescript, ReactJS, CosmJS, ChakraUI, Websocket",
+    "source": "https://github.com/arifintahu/dexplorer",
+    "demo": "",
+    "preview": "https://dexplorer.cakralabs.online",
+    "images": [
+      {
+        "url": "/images/projects/dexplorer-1.jpeg",
+        "description": "Dexplorer"
+      }
+    ],
+    "isShow": true
+  },
+  {
+    "year": "2023",
+    "title": "Uptick Inter Collection",
+    "description": "Uptick Inter Collection aims to provide a seamless experience and easy-to-understand UI for interacting with ICS721 on the Uptick Network. It is designed to display Uptick NFT collections and owned collections, enabling the transfer of NFTs on the same or different chains through IBC transfer, currently supporting only the Uptick Chain. Key features include displaying all native and IBC NFT collections, connecting to the Keplr Wallet, displaying owned NFT collections, NFT transfer, IBC NFT transfer, and denom class traces.",
+    "skill": "Typescript, ReactJS, CosmJS, ChakraUI, IBC, NFT, ICS721",
+    "source": "https://github.com/arifintahu/intercollection",
+    "demo": "https://drive.google.com/file/d/1GdsXYatp3eBwmvO2FWN8Jg2MM8CU818O/view?usp=sharing",
+    "preview": "",
+    "images": [
+      {
+        "url": "/images/projects/uptick-collection-1.png",
+        "description": "Uptick Inter Collection"
+      }
+    ],
+    "isShow": true
+  },
+  {
+    "year": "2023",
+    "title": "Stargaze NFT Transfer",
+    "description": "Stargaze NFT Transfer aims to make a seemless experience and easy to understand UI for interacting with ICS721 on Stargaze. It enables the transfer of NFTs from Stargaze to other chains through IBC transfer. The UI is built as similar as possible to main Stargaze website with minimal design.",
+    "skill": "Typescript, ReactJS, CosmJS, ChakraUI, IBC, NFT, ICS721",
+    "source": "https://github.com/arifintahu/stargaze-nft-transfer",
+    "demo": "https://drive.google.com/file/d/1k-cYDUxACfZcOpPvbIoBoOd6MrM-wm9T/view",
+    "preview": "",
+    "images": [
+      {
+        "url": "/images/projects/nft-transfer-1.jpeg",
+        "description": "Stargaze NFT Transfer"
+      }
+    ],
+    "isShow": true
+  },
+  {
     "year": "2021",
     "title": "E-Mobility: Choose, Rent, and Pay",
     "description": "This project was made from client. Emobility is Electric Bike Renting App which could register, rent, and pay.  It was built using VueJS, Elemen Ui, and TailwindCSS for front-end. Then the backend was built using MoleculerJS microservices. The user could choose bike, pay, and activate device through the app.",
     "skill": "NodeJS, MoleculerJS, PostgreSQL, VueJS, Element UI, TailwindCSS, Microservices",
     "source": "",
+    "demo": "",
     "preview": "",
     "images": [
       {
@@ -23,7 +104,8 @@
         "url": "/images/projects/emobility-4.png",
         "description": "Emobility"
       }
-    ]
+    ],
+    "isShow": true
   },
   {
     "year": "2021",
@@ -31,6 +113,7 @@
     "description": "This project was made during working in PT Elnusa Tbk. Smartmeter is an IoT monitoring application system which is connected with the devices such as household water measurement and gas measurement. I used VueJS as Front-end and MoleculerJS as back-end microservices. The user could figure out the information from the dashboard and set up the device directly from the app.",
     "skill": "NodeJS, Express, PostgreSQL, VueJS, MoleculerJS, Microservices, MQTT, AMQP",
     "source": "",
+    "demo": "",
     "preview": "https://iot.elnusa.co.id/smartmeter",
     "images": [
       {
@@ -45,7 +128,8 @@
         "url": "/images/projects/smartmeter-3.jpeg",
         "description": "Smartmeter"
       }
-    ]
+    ],
+    "isShow": true
   },
   {
     "year": "2021",
@@ -53,6 +137,7 @@
     "description": "This project was made for Project Structure Template especially REST API. Building project with standardized structure could save much our time. We could focus on business process without considering too much on project structure. On the other hand, a good project structure should be clean, nice refactored, and easy to maintain.",
     "skill": "NodeJS, Typescript, Express, PostgreSQL, REST API, Unit Test, Mocha, Supertest, Swagger",
     "source": "https://github.com/arifintahu/project-structure-api",
+    "demo": "",
     "preview": "",
     "images": [
       {
@@ -63,7 +148,8 @@
         "url": "/images/projects/projectapi-2.jpeg",
         "description": "Project Structure API"
       }
-    ]
+    ],
+    "isShow": true
   },
   {
     "year": "2021",
@@ -71,6 +157,7 @@
     "description": "This project was made in as a way to participate Gethired Devcode Front-end Challenge. I also used it to learn how to implement an UI design to Front-end Code and integration from Back-end using API. It shows To Do App for managing tasks. I made using Typescript and ReactJS with TailwindCSS as a CSS Framework. The user could add his/her activities and todo items with its priority. If the user has done the todo items, the items could be checked as done.",
     "skill": "Typescript, ReactJS, TailwindCSS, Vite, Axios",
     "source": "https://github.com/arifintahu/challenge-todo-app",
+    "demo": "",
     "preview": "https://arifintahu-todo-devcode.vercel.app/",
     "images": [
       {
@@ -81,7 +168,8 @@
         "url": "/images/projects/todo-list-app-2.jpeg",
         "description": "To Do List App"
       }
-    ]
+    ],
+    "isShow": false
   },
   {
     "year": "2021",
@@ -89,6 +177,7 @@
     "description": "This project was made for sending blast messages to hundreds of Whatsapp number. It built using NextJS as server side rendering and Whastappweb.js as library for Whatsapp API. The user could upload the file containing numbers, then fill the message. After that, it would automatically send messages to multiple contants after scanning Whatsapp QR Code.",
     "skill": "NodeJS, NextJS, TailwindCSS, Whatsappweb.js, Socketio",
     "source": "",
+    "demo": "",
     "preview": "https://overblast.herokuapp.com/",
     "images": [
       {
@@ -99,7 +188,8 @@
         "url": "/images/projects/overblast-1.jpeg",
         "description": "Overblast"
       }
-    ]
+    ],
+    "isShow": false
   },
   {
     "year": "2020",
@@ -107,6 +197,7 @@
     "description": "This project was made for joing 1000 start up bootcamp held by Kominfo Indonesia. It delivered app management for mosque stakeholder. It was built with VueJS and Vuetofy as Front-end, while the back-end is built using NodeJS, Express, and Socketio for realtime communication. The user could add financial records, send whatsapp blast, and record people profile.",
     "skill": "NodeJS, Express, PostgreSQL, VueJS, Vuetify, JWT, Socketio",
     "source": "",
+    "demo": "",
     "preview": "https://mosqu.netlify.app/",
     "images": [
       {
@@ -117,7 +208,8 @@
         "url": "/images/projects/mosqu-2.jpeg",
         "description": "MosQu"
       }
-    ]
+    ],
+    "isShow": false
   },
   {
     "year": "2020",
@@ -125,6 +217,7 @@
     "description": "This project was made during working in PT Elnusa Tbk. DiRumahAja is an online presence app for employee. It records thousands user activities such as presence and geolocation. It was built using VueJS as Front-end and NodeJS microservice architecture with MQTT broker as back-end. The user could submit online presence through the app and then the admin user could figure out the dashboard.",
     "skill": "NodeJS, Express, PostgreSQL, VueJS, Microservices, MQTT, AMQP",
     "source": "",
+    "demo": "",
     "preview": "https://dirumahaja.elnusa.co.id/",
     "images": [
       {
@@ -139,7 +232,8 @@
         "url": "/images/projects/dirumahaja-3.jpeg",
         "description": "DiRumahAja"
       }
-    ]
+    ],
+    "isShow": true
   },
   {
     "year": "2020",
@@ -147,13 +241,15 @@
     "description": "This project was made for implementation of user based collaborative filtering on movies dataset. User-Based Collaborative Filtering is a technique used to predict the items that a user might like on the basis of ratings given to that item by the other users who have similar taste with that of the target user. It was built using Python and Flask as web server. The user could select any user then it shows the recommendation movies based on similar tastes.",
     "skill": "Python, Flask, Pandas, Numpy, Scipy",
     "source": "https://github.com/arifintahu/movie-recommender-app",
+    "demo": "",
     "preview": "",
     "images": [
       {
         "url": "/images/projects/movieapp.png",
         "description": "DiRumahAja"
       }
-    ]
+    ],
+    "isShow": false
   },
   {
     "year": "2019",
@@ -161,6 +257,7 @@
     "description": "This project was made for QBLearning project. There are several features such as Question Writer, Question Bank, Exam Management, and so on. It was built using NodeJs and Typescript with GraphQL as API. Then, the frontend was built using VueJS and Apollo for GraphQL API Connection. The user could add some questions and exams inside the app for exam managament.",
     "skill": "NodeJS, Typescript, GraphQL, Vue, Apollo",
     "source": "",
+    "demo": "",
     "preview": "",
     "images": [
       {
@@ -171,6 +268,7 @@
         "url": "/images/projects/qblearning-2.jpeg",
         "description": "QBLearning"
       }
-    ]
+    ],
+    "isShow": false
   }
 ]

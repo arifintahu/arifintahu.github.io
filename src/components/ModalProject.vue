@@ -46,6 +46,9 @@
           <a v-if="item.preview" :href="item.preview" target="__blank">
             <button class="button is-dark">Live Preview</button>
           </a>
+          <a v-if="item.demo" :href="item.demo" target="__blank">
+            <button class="button is-dark">Demo Video</button>
+          </a>
         </div>
       </footer>
     </div>
